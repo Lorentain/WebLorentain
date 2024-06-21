@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Lorentain | En Proceso</title>
+</head>
+<body>
+
+    <h1>EN PROCESO</h1>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            background: #000;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            color: #fff;
+            font-size: 6rem;
+            text-shadow: 
+            0px 0px 6px rgb(0, 162, 255),
+            0px 0px 8px rgb(0, 162, 255);
+            animation: parpadeo-led 8s infinite linear;
+        }
+
+        @keyframes parpadeo-led {
+            12%,17%{text-shadow: none;}
+            14%,18%,20%{text-shadow: 0px 0px 12px rgb(0, 162, 255),0px 0px 16px rgb(0, 162, 255)}
+        }
+
+    </style>
+    
+</body>
+</html>
