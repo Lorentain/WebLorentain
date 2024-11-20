@@ -1,48 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Lorentain | En Proceso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Inicio</title>
 </head>
-<body>
 
-    <h1>EN PROCESO</h1>
+<body class="bg-black">
+    <!-- Inicio Header -->
+    <header class="flex items-center justify-between lg:justify-around bg-black p-4">
 
-    <style>
+        <div class="logo">
+            <h1 class="text-4xl text-white font-bold">Lorenzo</h1>
+        </div>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        <ul class="menu hidden items-center gap-8 lg:flex">
+            <li><a class="text-2xl text-white font-bold" href="./index.html">Inicio</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+            <li><a class="text-2xl text-white font-bold">Proyectos</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+            <li><a class="text-2xl text-white font-bold">Educación</a></li>
+            <li><a class="text-2xl text-white font-bold">Contacto</a></li>
+        </ul>
 
-        body {
-            font-family: "Lato", sans-serif;
-            background: #000;
-        }
+        <div class="menu-hamburguesa block lg:hidden">
+            <div><span class="barra" id="barra1"></span></div>
+            <div><span class="barra" id="barra2"></span></div>
+            <div><span class="barra" id="barra3"></span></div>
 
-        h1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            <div class="menu-movil bg-black h-full w-full flex-col items-center justify-around fixed left-0 top-[120px] border-t-2 border-blue-500 shadow-[0_-2px_4px_rgb(0,162,255),0_-2px_6px_rgb(0,162,255),0_2px_4px_rgb(0,162,255),0_1px_8px_rgb(0,162,255)] z-10">
+                <li><a class="text-3xl text-white font-bold" href="./index.html">Inicio</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+                <li><a class="text-3xl text-white font-bold">Proyectos</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+                <li><a class="text-3xl text-white font-bold">Educación</a></li>
+                <li><a class="text-3xl text-white font-bold">Contacto</a></li>
+            </div>
+        </div>        
 
-            color: #fff;
-            font-size: 6rem;
-            text-shadow: 
-            0px 0px 6px rgb(0, 162, 255),
-            0px 0px 8px rgb(0, 162, 255);
-            animation: parpadeo-led 8s infinite linear;
-        }
+    </header>
+    <!-- Fin Header -->
 
-        @keyframes parpadeo-led {
-            12%,17%{text-shadow: none;}
-            14%,18%,20%{text-shadow: 0px 0px 12px rgb(0, 162, 255),0px 0px 16px rgb(0, 162, 255)}
-        }
+    <main class="main-hero flex justify-around items-center gap-14 p-10">
+        <div class="contendor__izquierda py-[3rem] px-[5rem] max-md:w-full max-md:flex max-md:flex-col max-md:items-center max-md:justify-center max-md:p-7 max-sm:p-5">
+            <h3 class="text-5xl text-white max-md:text-center">Hola, me llamo</h3>
+            <h1 class="text-8xl text-white font-bold max-lg:text-7xl max-md:text-center max-md:text-6xl">Lorenzo Herrero <br>Salcedo</h1><br>
+            <p class="text-2xl text-white max-md:text-center">Desarrollador Web | Diseñador Web</p>
+            <button>Más información</button>
+            <br>
+            <div class="contenedor__redes flex gap-6 mt-2 max-md:gap-4">
+                <a href="https://www.instagram.com/lorenzoh04_/" target="_blank"><i class="icon fa-brands fa-instagram text-white text-5xl cursor-pointer"></i></a>
+                <a href="https://x.com/lorentainyt" target="_blank"><i class="icon fa-brands fa-twitter text-white text-5xl cursor-pointer"></i></a>
+                <a href="https://github.com/Lorentain" target="_blank"><i class="icon fa-brands fa-github text-white text-5xl cursor-pointer"></i></a>
+                <a href="https://wa.me/34625231816" target="_blank"><i class="icon fa-brands fa-whatsapp text-white text-5xl cursor-pointer"></i></a>
+            </div>
+        </div>
 
-    </style>
-    
+        <div class="contenedor__cv p-6 gap-4">
+            <h3 class="text-white text-4xl font-bold">Mirar mi CV</h3>
+            <a class="cursor-pointer" href="./CV_Lorentain.pdf" target="_blank">
+                <i class="icon-cv fa-solid fa-file-lines text-white text-4xl"></i>
+            </a>
+        </div>
+        </a>
+    </main>
+
+    <script src="https://kit.fontawesome.com/56b3cc64ab.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

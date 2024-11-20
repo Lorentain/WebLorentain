@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/56b3cc64ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Sobre Mi</title>
+</head>
+
+<body class="bg-black">
+    <!-- Inicio Header -->
+    <header class="flex items-center justify-between lg:justify-around bg-black p-4">
+        
+        <div class="logo">
+            <h1 class="text-4xl text-white font-bold">Lorenzo</h1>
+        </div>
+
+        <ul class="menu hidden items-center gap-8 lg:flex">
+            <li><a class="text-2xl text-white font-bold" href="./index.html">Inicio</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+            <li><a class="text-2xl text-white font-bold">Proyectos</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+            <li><a class="text-2xl text-white font-bold">Educación</a></li>
+            <li><a class="text-2xl text-white font-bold">Contacto</a></li>
+        </ul>
+
+        <div class="menu-hamburguesa block lg:hidden">
+            <div><span class="barra" id="barra1"></span></div>
+            <div><span class="barra" id="barra2"></span></div>
+            <div><span class="barra" id="barra3"></span></div>
+
+            <div class="menu-movil bg-black h-full w-full flex-col items-center justify-around fixed left-0 top-[120px] border-t-2 border-blue-500 shadow-[0_-2px_4px_rgb(0,162,255),0_-2px_6px_rgb(0,162,255),0_2px_4px_rgb(0,162,255),0_1px_8px_rgb(0,162,255)] z-10">
+                <li><a class="text-3xl text-white font-bold" href="./index.html">Inicio</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+                <li><a class="text-3xl text-white font-bold">Proyectos</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+                <li><a class="text-3xl text-white font-bold">Educación</a></li>
+                <li><a class="text-3xl text-white font-bold">Contacto</a></li>
+            </div>
+        </div>        
+
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Main SobreMi -->
+    <main class="bg-black w-full flex flex-col items-center justify-center gap-14 p-6">
+        <div>
+            <p class="titulo_sobremi text-white font-bold text-7xl">Sobre Mi</p>
+        </div>
+        <div class="w-1/2 max-lg:w-[90%] border-2 border-blue-500 shadow-[0_0_8px_rgb(0,162,255),0_0_6px_rgb(0,162,255),inset_0_0_10px_rgb(0,162,255)] p-6">
+            <p class="text-white text-2xl">Hola, mi nombre es Lorenzo Herrero Salcedo. Tengo 20 años, soy de Nerja (Málaga) y siempre me ha gustado la informática.</p><br>
+            <p class="text-white text-2xl">Actualmente estoy estudiando un curso de especialización de videojuegos pero tengo titulación de grado 
+            medio SMR y grado superior de Desarrollo de Aplicaciones Web.
+            </p><br>
+            <p class="text-white text-2xl">Tengo experiencia estando de prácticas en una empresa de informática ( NarixaSoft 3 Meses), luego con esta misma empresa 2 meses
+                trabajando y por último 3 meses de prácticas mejorando la página web del Colegio de Ingenieros industriales de Granada (COGITI Granada).
+            </p>
+        </div>
+    </main>
+    <!-- Fin Main SobreMi -->
+
+</body>
+
+</html>

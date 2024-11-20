@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/56b3cc64ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Habilidades</title>
+</head>
+
+<body class="bg-black">
+    <!-- Inicio Header -->
+    <header class="flex items-center justify-between lg:justify-around bg-black p-4">
+
+        <div class="logo">
+            <h1 class="text-4xl text-white font-bold">Lorenzo</h1>
+        </div>
+
+        <ul class="menu hidden items-center gap-8 lg:flex">
+            <li><a class="text-2xl text-white font-bold" href="./index.html">Inicio</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+            <li><a class="text-2xl text-white font-bold">Proyectos</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+            <li><a class="text-2xl text-white font-bold">Educación</a></li>
+            <li><a class="text-2xl text-white font-bold">Contacto</a></li>
+        </ul>
+
+        <div class="menu-hamburguesa block lg:hidden">
+            <div><span class="barra" id="barra1"></span></div>
+            <div><span class="barra" id="barra2"></span></div>
+            <div><span class="barra" id="barra3"></span></div>
+
+            <div
+                class="menu-movil bg-black h-full w-full flex-col items-center justify-around fixed left-0 top-[120px] border-t-2 border-blue-500 shadow-[0_-2px_4px_rgb(0,162,255),0_-2px_6px_rgb(0,162,255),0_2px_4px_rgb(0,162,255),0_1px_8px_rgb(0,162,255)] z-10">
+                <li><a class="text-3xl text-white font-bold" href="./index.html">Inicio</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+                <li><a class="text-3xl text-white font-bold">Proyectos</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+                <li><a class="text-3xl text-white font-bold">Educación</a></li>
+                <li><a class="text-3xl text-white font-bold">Contacto</a></li>
+            </div>
+        </div>
+
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Main Habilidades -->
+
+    <main class="bg-black w-full flex justify-center items-center flex-col">
+        <div class="w-full flex items-center justify-center">
+            <p class="titulo_habilidades text-white font-bold text-7xl">Habilidades</p>
+        </div>
+        <p class="text-white font-bold text-3xl mt-6">Desarrollo Web
+            <i class="fa-solid fa-globe text-white text-3xl"></i>
+        </p>
+
+        <!-- INICIO HABILIDADES DESARROLLO WEB -->
+        <div class="habilidad_web w-full grid grid-cols-2 gap-8 mt-6 p-2">
+            <!-- Habilidad HTML -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_html relative flex justify-center items-center bg-orange-500 text-white text-2xl font-bold w-3/5 h-14 border-4 border-orange-500 rounded-sm overflow-hidden">
+                    95% HTML
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-html5 text-4xl w-6 text-orange-500 ml-2"></i>
+            </div>
+
+            <!-- Habilidad CSS -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_css relative flex justify-center items-center bg-blue-500 text-white text-2xl font-bold w-3/5 h-14 border-4 border-blue-500 rounded-sm overflow-hidden">
+                    80% CSS
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-css3-alt text-4xl w-6 text-blue-500 ml-2"></i>
+            </div>
+
+            <!-- Habilidad Java -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_java relative flex justify-center items-center bg-red-500 text-white text-2xl font-bold w-3/5 h-14 border-4 border-red-500 rounded-sm overflow-hidden">
+                    70% JAVA
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-java text-4xl w-6 text-red-500 ml-2"></i>
+            </div>
+
+            <!-- Habilidad PHP -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_php relative flex justify-center items-center bg-purple-400 text-white text-2xl font-bold w-3/5 h-14 border-4 border-purple-400 rounded-sm overflow-hidden">
+                    55% PHP
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-php text-4xl w-6 text-purple-400 ml-2"></i>
+            </div>
+
+            <!-- Habilidad JAVASCRIPT -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_javascript relative flex justify-center items-center bg-yellow-600 text-white text-2xl font-bold w-3/5 h-14 border-4 border-yellow-600 rounded-sm overflow-hidden">
+                    75% JAVASCRIPT
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-js text-4xl w-6 text-yellow-600 ml-2"></i>
+            </div>
+
+            <!-- Habilidad REACT -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_react relative flex justify-center items-center bg-cyan-500 text-white text-2xl font-bold w-3/5 h-14 border-4 border-cyan-500 rounded-sm overflow-hidden">
+                    75% REACT
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-react text-4xl w-6 text-cyan-500 ml-2"></i>
+            </div>
+
+            <!-- Habilidad VUEJS -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_vuejs relative flex justify-center items-center bg-green-600 text-white text-2xl font-bold w-3/5 h-14 border-4 border-green-600 rounded-sm overflow-hidden">
+                    60% VUEJS
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-vuejs text-4xl w-6 text-green-600 ml-2"></i>
+            </div>
+
+            <!-- Habilidad ANGULARJS -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_angularjs relative flex justify-center items-center bg-red-800 text-white text-2xl font-bold w-3/5 h-14 border-4 border-red-800 rounded-sm overflow-hidden">
+                    65% ANGULARJS
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-angular text-4xl w-6 text-red-800 ml-2"></i>
+            </div>
+
+            <!-- Habilidad MYSQL -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_mysql relative flex justify-center items-center bg-cyan-700 text-white text-2xl font-bold w-3/5 h-14 border-4 border-cyan-700 rounded-sm overflow-hidden">
+                    80% MYSQL
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-solid fa-database text-4xl w-6 text-cyan-700 ml-2"></i>
+            </div>
+
+            <!-- Habilidad MARIADB -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_maridb relative flex justify-center items-center bg-amber-800 text-white text-2xl font-bold w-3/5 h-14 border-4 border-amber-800 rounded-sm overflow-hidden">
+                    70% MARIADB
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-solid fa-server text-4xl w-6 text-amber-800 ml-2"></i>
+            </div>
+
+            <!-- Habilidad TAILWINDCSS -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_tailwindcss relative flex justify-center items-center bg-teal-600 text-white text-2xl font-bold w-3/5 h-14 border-4 border-teal-600 rounded-sm overflow-hidden">
+                    65% TAILWINDCSS
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-solid fa-wind text-4xl w-6 text-teal-600 ml-2"></i>
+            </div>
+
+            <!-- Habilidad BOOTSTRAP -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_bootstrap relative flex justify-center items-center bg-indigo-600 text-white text-2xl font-bold w-3/5 h-14 border-4 border-indigo-600 rounded-sm overflow-hidden">
+                    75% BOOTSTRAP
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-bootstrap text-4xl w-6 text-indigo-600 ml-2"></i>
+            </div>
+
+        </div>
+        <!-- FIN HABILIDADES DESARROLLO WEB -->
+
+        <p class="text-white font-bold text-3xl mt-6">Desarrollo de Juegos
+            <i class="fa-solid fa-gamepad text-white text-3xl"></i>
+        </p>
+
+        <!-- INICIO HABILIDADES DESARROLLO DE JUEGOS -->
+        <div class="habilidad_web w-full grid grid-cols-2 gap-8 mt-6 p-2">
+
+            <!-- Habilidad UNITY -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_unity relative flex justify-center items-center bg-slate-500 text-white text-2xl font-bold w-3/5 h-14 border-4 border-slate-500 rounded-sm overflow-hidden">
+                    60% UNITY
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-brands fa-unity text-4xl w-6 text-slate-500 ml-2"></i>
+            </div>
+
+            <!-- Habilidad UNREAL ENGINE -->
+            <div class="habilidad flex justify-center items-center">
+                <div
+                    class="habilidad_unrealengine relative flex justify-center items-center bg-black text-white text-2xl font-bold w-3/5 h-14 border-4 border-white rounded-sm overflow-hidden">
+                    35% UNREAL ENGINE
+                    <div class="absolute w-[10%] h-full right-0 top-0 bg-white z-10"></div>
+                </div>
+                <i class="fa-solid fa-gear text-4xl w-6 text-white ml-2"></i>
+            </div>
+
+        </div>
+        <!-- FIN HABILIDADES DESARROLLO DE JUEGOS -->
+
+    </main>
+
+    <!-- Fin Main Habilidades -->
+
+</body>
+
+</html>

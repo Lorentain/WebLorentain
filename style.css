@@ -1,0 +1,385 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* INICIO - Header */
+
+header {
+    height: 120px;
+}
+
+li {
+    position: relative;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 162, 255);
+    box-shadow: 0 0 2px rgb(0, 162, 255),
+                0 0 4px rgb(0, 162, 255);
+    transition: all .5s ease-in-out;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+li:hover {
+    text-shadow: 0 0 4px rgb(0, 162, 255),
+                 0 0 6px rgb(0, 162, 255);
+    transform: scale(1.1);
+}
+
+/* FIN - Header */
+
+/* INICIO - Main Hero */
+
+.main-hero {
+    height: calc(100vh - 120px);
+    background: black;
+}
+
+.contendor__izquierda {
+    border: 2px solid rgb(0, 162, 255);
+    box-shadow: 
+        0px 0px 6px rgb(0, 162, 255),
+        0px 0px 8px rgb(0, 162, 255),
+        inset 0px 0px 6px rgb(0, 162, 255),
+        inset 0px 0px 8px rgb(0, 162, 255);
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.contendor__izquierda h1 {
+    text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 14px rgb(0, 162, 255);
+    animation: parpadeo-led 5s infinite alternate;
+}
+
+.icon {
+    text-shadow: 0 0 12px rgb(0, 162, 255),
+                0 0 18px rgb(0, 162, 255);
+    animation: balanceo 4s infinite alternate ease-in-out;
+}
+
+.icon-cv {
+    text-shadow: 0 0 12px rgb(0, 162, 255),
+    0 0 18px rgb(0, 162, 255);
+}
+
+.contenedor__cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid rgb(0, 162, 255);
+    box-shadow: 
+        0px 0px 6px rgb(0, 162, 255),
+        0px 0px 8px rgb(0, 162, 255),
+        inset 0px 0px 6px rgb(0, 162, 255),
+        inset 0px 0px 8px rgb(0, 162, 255);
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.contenedor__cv h3 {
+    text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 14px rgb(0, 162, 255);
+    animation: parpadeo-led 5s infinite alternate;
+}
+
+@media (max-width: 1500px) {
+    .main-hero {
+        flex-direction: column;
+    }
+
+    .contendor__izquierda {
+        width: 90%;
+    }
+}
+
+/* FIN - Main Hero */
+
+/* INICIO - Main SobreMi */
+
+.titulo_sobremi {
+    text-shadow: 0 0px 4px rgb(0, 162, 255),
+    0 0px 6px rgb(0, 162, 255),
+    0 0px 10px rgb(0, 162, 255);
+    animation: parpadeo-led-2 6s infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+/* FIN - Main SobreMi */
+
+/* INICIO - Main Habilidades */
+
+.titulo_habilidades {
+    text-shadow: 0 0px 4px rgb(0, 162, 255),
+                 0 0px 6px rgb(0, 162, 255),
+                 0 0px 10px rgb(0, 162, 255);
+    animation: parpadeo-led-2 6s infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+.habilidad_html:hover {
+    box-shadow: 0 0 12px rgb(249, 115, 22), 0 0 14px rgb(249, 115, 22);
+}
+
+.habilidad_css:hover {
+    box-shadow: 0 0 12px rgb(0, 162, 255), 0 0 14px rgb(0, 162, 255);
+}
+
+.habilidad_java:hover {
+    box-shadow: 0 0 12px rgb(239, 68, 68), 0 0 14px rgb(239, 68, 68);
+}
+
+.habilidad_php:hover {
+    box-shadow: 0 0 12px rgb(192, 132, 252), 0 0 14px rgb(192, 132, 252);
+}
+
+.habilidad_javascript:hover {
+    box-shadow: 0 0 12px rgb(202, 138, 4), 0 0 14px rgb(202, 138, 4);
+}
+
+.habilidad_react:hover {
+    box-shadow: 0 0 12px rgb(6, 182, 212), 0 0 14px rgb(6, 182, 212);
+}
+
+.habilidad_vuejs:hover {
+    box-shadow: 0 0 12px rgb(22, 163, 74), 0 0 14px rgb(22, 163, 74);
+}
+
+.habilidad_angularjs:hover {
+    box-shadow: 0 0 12px rgb(153, 27, 27), 0 0 14px rgb(153, 27, 27);
+}
+
+.habilidad_mysql:hover {
+    box-shadow: 0 0 12px rgb(14, 116, 144), 0 0 14px rgb(14, 116, 144);
+}
+
+.habilidad_maridb:hover {
+    box-shadow: 0 0 12px rgb(146, 64, 14), 0 0 14px rgb(146, 64, 14);
+}
+
+.habilidad_tailwindcss:hover {
+    box-shadow: 0 0 12px rgb(13, 148, 136), 0 0 14px rgb(13, 148, 136);
+}
+
+.habilidad_bootstrap:hover {
+    box-shadow: 0 0 12px rgb(79, 70, 229), 0 0 14px rgb(79, 70, 229);
+}
+
+.habilidad_unity:hover {
+    box-shadow: 0 0 12px rgb(100, 116, 139), 0 0 14px rgb(100, 116, 139);
+}
+
+.habilidad_unrealengine:hover {
+    box-shadow: 0 0 12px rgb(255, 255, 255), 0 0 14px rgb(255, 255, 255);
+}
+
+/* FIN - Main Habilidades */
+
+/* INICIO - Menú Hamburguesa */
+
+.menu-movil {
+    display: none;
+}
+
+.menu-hamburguesa {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-hamburguesa:hover .menu-movil {
+    display: flex;
+}
+
+.menu-hamburguesa:hover #barra1{
+    animation-name: animacionBarra1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.menu-hamburguesa:hover #barra2{
+    animation-name: animacionBarra2;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.menu-hamburguesa:hover #barra3{
+    animation-name: animacionBarra3;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.menu-hamburguesa:not(:hover) #barra1 {
+    animation-name: animacionBarra1Not;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.menu-hamburguesa:not(:hover) #barra2 {
+    animation-name: animacionBarra2Not;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.menu-hamburguesa:not(:hover) #barra3 {
+    animation-name: animacionBarra3Not;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.barra {
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 4px;
+    width: 50px;
+}
+
+#barra2{
+    margin-top: 20px;
+}
+
+#barra3 {
+    margin-top: 40px;
+}
+
+/* FIN - Menú Hamburguesa */
+
+/* INICIO - KeyFrames */
+
+@keyframes parpadeo-led {
+    10%,15%,85% {text-shadow: none;}
+    12%,18%,87% {text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 18px rgb(0, 162, 255);}
+}
+
+@keyframes parpadeo-led-foto {
+    0%,100% {box-shadow: 0 0 4px rgb(0, 162, 255)}
+    20%,27%,92% {box-shadow: 0 0 4px rgb(0, 162, 255), 0 0 2px rgb(0, 162, 255);}
+    22%,30%,94% {box-shadow: 0 0 8px rgb(0, 162, 255), 0 0 10px rgb(0, 162, 255);}
+}
+
+@keyframes balanceo { 
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes parpadeo-led-2 {
+    0% {
+        text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 18px rgb(0, 162, 255);
+    }
+
+    50% {
+        text-shadow: 0 0 6px rgb(0, 162, 255), 0 0 8px rgb(0, 162, 255);
+    }
+
+    51% {
+        text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 18px rgb(0, 162, 255);
+    }
+
+    54% {
+        text-shadow: 0 0 7px rgb(0, 162, 255), 0 0 9px rgb(0, 162, 255);
+    }
+
+    56% {
+        text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 18px rgb(0, 162, 255);
+    }
+
+    75% {
+        text-shadow: 0 0 6px rgb(0, 162, 255), 0 0 8px rgb(0, 162, 255);
+    }
+
+    78% {
+        text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 18px rgb(0, 162, 255);
+    }
+
+    100% {
+        text-shadow: 0 0 12px rgb(0, 162, 255), 0 0 18px rgb(0, 162, 255);
+    }
+}
+
+@keyframes animacionBarra1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(240deg);
+    }
+}
+
+@keyframes animacionBarra2 {
+    0% {
+        opacity: 1;
+    }
+    
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animacionBarra3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-240deg);
+    }
+}
+
+@keyframes animacionBarra1Not {
+    from {
+        transform: rotate(240deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animacionBarra2Not {
+    0% {
+        opacity: 0;
+    }
+
+    85% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animacionBarra3Not {
+    from {
+        transform: rotate(-240deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* FIN - KeyFrames */
