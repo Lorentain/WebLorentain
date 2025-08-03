@@ -48,7 +48,7 @@ li:hover {
 /* INICIO - Main Hero */
 
 .main-hero {
-    height: calc(100vh - 120px);
+    /* height: calc(100vh - 120px); */
     background: black;
 }
 
@@ -85,7 +85,6 @@ li:hover {
     align-items: center;
     width: auto;
     height: auto;
-    overflow: hidden;
     border: 2px solid rgb(0, 162, 255);
     box-shadow: 
         0px 0px 6px rgb(0, 162, 255),
@@ -104,10 +103,17 @@ li:hover {
 @media (max-width: 1500px) {
     .main-hero {
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     .contendor__izquierda {
         width: 90%;
+    }
+}
+
+@media (width < 768px) {
+    .main-hero {
+        padding: 1.5rem !important;
     }
 }
 

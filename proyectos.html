@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,162 @@
     <link rel="stylesheet" href="./style.css">
     <title>Proyectos</title>
 </head>
+
 <body class="bg-black">
-        <!-- Inicio Header -->
-        <header class="flex items-center justify-between lg:justify-around bg-black p-4">
+    <!-- Inicio Header -->
+    <header class="flex items-center justify-between lg:justify-around bg-black p-4">
 
-            <div class="logo">
-                <h1 class="text-4xl text-white font-bold">Lorenzo</h1>
+        <div class="logo">
+            <h1 class="text-4xl text-white font-bold">Lorenzo</h1>
+        </div>
+
+        <ul class="menu hidden items-center gap-8 lg:flex">
+            <li><a class="text-2xl text-white font-bold" href="./index.html">Inicio</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./proyectos.html">Proyectos</a></li>
+            <li><a class="text-2xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+            <li><a class="text-2xl text-white font-bold">Educación</a></li>
+            <li><a class="text-2xl text-white font-bold">Contacto</a></li>
+        </ul>
+
+        <div class="menu-hamburguesa block lg:hidden">
+            <div><span class="barra" id="barra1"></span></div>
+            <div><span class="barra" id="barra2"></span></div>
+            <div><span class="barra" id="barra3"></span></div>
+
+            <div
+                class="menu-movil bg-black h-full w-full flex-col items-center justify-around fixed left-0 top-[120px] border-t-2 border-blue-500 shadow-[0_-2px_4px_rgb(0,162,255),0_-2px_6px_rgb(0,162,255),0_2px_4px_rgb(0,162,255),0_1px_8px_rgb(0,162,255)] z-10">
+                <li><a class="text-3xl text-white font-bold" href="./index.html">Inicio</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./proyectos.html">Proyectos</a></li>
+                <li><a class="text-3xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
+                <li><a class="text-3xl text-white font-bold">Educación</a></li>
+                <li><a class="text-3xl text-white font-bold">Contacto</a></li>
             </div>
-    
-            <ul class="menu hidden items-center gap-8 lg:flex">
-                <li><a class="text-2xl text-white font-bold" href="./index.html">Inicio</a></li>
-                <li><a class="text-2xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
-                <li><a class="text-2xl text-white font-bold" href="./proyectos.html">Proyectos</a></li>
-                <li><a class="text-2xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
-                <li><a class="text-2xl text-white font-bold">Educación</a></li>
-                <li><a class="text-2xl text-white font-bold">Contacto</a></li>
-            </ul>
-    
-            <div class="menu-hamburguesa block lg:hidden">
-                <div><span class="barra" id="barra1"></span></div>
-                <div><span class="barra" id="barra2"></span></div>
-                <div><span class="barra" id="barra3"></span></div>
-    
-                <div
-                    class="menu-movil bg-black h-full w-full flex-col items-center justify-around fixed left-0 top-[120px] border-t-2 border-blue-500 shadow-[0_-2px_4px_rgb(0,162,255),0_-2px_6px_rgb(0,162,255),0_2px_4px_rgb(0,162,255),0_1px_8px_rgb(0,162,255)] z-10">
-                    <li><a class="text-3xl text-white font-bold" href="./index.html">Inicio</a></li>
-                    <li><a class="text-3xl text-white font-bold" href="./sobremi.html">Sobre Mi</a></li>
-                    <li><a class="text-3xl text-white font-bold" href="./proyectos.html">Proyectos</a></li>
-                    <li><a class="text-3xl text-white font-bold" href="./habilidades.html">Habilidades</a></li>
-                    <li><a class="text-3xl text-white font-bold">Educación</a></li>
-                    <li><a class="text-3xl text-white font-bold">Contacto</a></li>
-                </div>
-            </div>
-    
-        </header>
-        <!-- Fin Header -->
+        </div>
 
-        <!-- Inicio Main Proyectos -->
-        <main class="bg-black w-full h-52 flex justify-center items-center flex-col">
-            <div class="w-full flex items-center justify-center">
-                <p class="titulo_proyectos text-white font-bold text-7xl">Proyectos</p>
-            </div>
-        </main>
-        <!-- Fin Main Proyectos -->
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Main Proyectos -->
+    <main class="bg-black w-full flex justify-center items-center flex-col p-6 mb-8">
+        <div class="w-full flex items-center justify-center">
+            <p class="titulo_proyectos text-white font-bold text-7xl max-lg:text-6xl">Proyectos</p>
+        </div>
+    </main>
+    <!-- Fin Main Proyectos -->
 
 
-        
-        <section class="flex justify-around items-center w-full">
-            <!-- Inicio Proyecto "Project Drain" -->
-                <div class="contenedor_proyecto w-1/4 border-4 border-white p-6">
-                    <a class="cursor-pointer" target="_blank" href="https://mercedariasfp.itch.io/projectdrain">
-                        <h1 class="text-6xl text-white font-bold text-center mb-8 underline">Project Drain</h1>
-                        <img src="./img/ProjectDrain_1.png" alt="Project Drain" class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
-                        <img src="./img/ProjectDrain_2.png" alt="Project Drain" class="max-w-full h-auto mx-auto border-[1px] border-white">
-                    </a>
-                </div>
-                <!-- Fin Proyecto "Project Drain" -->    
-                 
-                <!-- Inicio Proyecto "Bubble Pop" -->
-                <div class="contenedor_proyecto w-1/4 border-4 border-white p-6">
-                    <a class="cursor-pointer" target="_blank" href="https://lorentain.itch.io/bubble-pop">
-                        <h1 class="text-6xl text-white font-bold text-center mb-8 underline">Bubble Pop</h1>
-                        <img src="./img/BubblePop_1.png" alt="Bubble Pop" class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
-                        <img src="./img/BubblePop_2.png" alt="Bubble Pop" class="max-w-full h-auto mx-auto border-[1px] border-white">
-                    </a>
-                </div>
-            <!-- Fin Proyecto "Bubble Pop" -->
-                <div class="w-1/4 h-80 border-2 border-white"></div>
-        </section>
-        
 
-        
-        
-        
-    
+    <section class="flex justify-around items-center w-full mb-4 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:gap-10">
+        <!-- Inicio Proyecto "Project Drain" -->
+        <div class="contenedor_proyecto w-1/4 border-4 border-white p-6 max-lg:w-[92%]">
+            <h1 class="text-6xl text-white font-bold text-center mb-8">Project Drain</h1>
+            <a href="./img/ProjectDrain_1.png" target="_blank">
+                <img src="./img/ProjectDrain_1.png" alt="Project Drain"
+                    class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
+            </a>
+            <a href="./img/ProjectDrain_2.png" target="_blank">
+                <img src="./img/ProjectDrain_2.png" alt="Project Drain"
+                    class="max-w-full h-auto mx-auto border-[1px] border-white">
+            </a>
+            <a class="flex justify-center items-center" href="https://mercedariasfp.itch.io/projectdrain"
+                target="_blank">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-6">Ver Proyecto</button>
+            </a>
+        </div>
+        <!-- Fin Proyecto "Project Drain" -->
+
+        <!-- Inicio Proyecto "Bubble Pop" -->
+        <div class="contenedor_proyecto w-1/4 border-4 border-white p-6 max-lg:w-[92%]">
+            <h1 class="text-6xl text-white font-bold text-center mb-8">Bubble Pop</h1>
+            <a href="./img/BubblePop_1.png" target="_blank">
+                <img src="./img/BubblePop_1.png" alt="Bubble Pop"
+                    class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
+            </a>
+            <a href="./img/BubblePop_2.png" target="_blank">
+                <img src="./img/BubblePop_2.png" alt="Bubble Pop"
+                    class="max-w-full h-auto mx-auto border-[1px] border-white">
+            </a>
+            <a class="flex justify-center items-center" href="https://lorentain.itch.io/bubble-pop" target="_blank">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-6">Ver Proyecto</button>
+            </a>
+        </div>
+        <!-- Fin Proyecto "Bubble Pop" -->
+
+        <!-- Inicio Proyecto "Pixel Line" -->
+        <div class="contenedor_proyecto w-1/4 border-4 border-white p-6 max-lg:w-[92%]">
+            <h1 class="text-6xl text-white font-bold text-center mb-8">Pixel <br> Line</h1>
+            <a href="./img/PixelLine_1.png" target="_blank">
+                <img src="./img/PixelLine_1.png" alt="Pixel Line"
+                    class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
+            </a>
+            <a href="./img/PixelLine_2.png" target="_blank">
+                <img src="./img/PixelLine_2.png" alt="Pixel Line"
+                    class="max-w-full h-auto mx-auto border-[1px] border-white">
+            </a>
+            <a class="flex justify-center items-center" href="https://lorentain.itch.io/pixel-line" target="_blank">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-6">Ver Proyecto</button>
+            </a>
+        </div>
+        <!-- Fin Proyecto "Pixel Line" -->
+
+    </section>
+
+    <section class="flex justify-around items-center w-full mb-4 mt-20 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:gap-10">
+        <!-- Inicio Proyecto "Web Inmueble" -->
+        <div class="contenedor_proyecto w-1/4 border-4 border-white p-6 max-lg:w-[92%]">
+            <h1 class="text-6xl text-white font-bold text-center mb-8 max-lg:text-[3.3rem]">Web Inmuebles</h1>
+            <a href="./img/Inmobiliaria_1.png" target="_blank">
+                <img src="./img/Inmobiliaria_1.png" alt="Web Inmobiliaria"
+                    class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
+            </a>
+            <a href="./img/Inmobiliaria_2.png" target="_blank">
+                <img src="./img/Inmobiliaria_2.png" alt="Web Inmobiliaria"
+                    class="max-w-full h-auto mx-auto border-[1px] border-white">
+            </a>
+            <a class="flex justify-center items-center" href="https://lorentain.github.io/ProyectoInmobiliaria/" target="_blank">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-6">Ver Proyecto</button>
+            </a>
+        </div>
+        <!-- Fin Proyecto "Web Inmueble" -->
+
+        <!-- Inicio Proyecto "Web Gimnasio" -->
+        <div class="contenedor_proyecto w-1/4 border-4 border-white p-6 max-lg:w-[92%]">
+            <h1 class="text-6xl text-white font-bold text-center mb-8">Web Gimnasio</h1>
+            <a href="./img/Gimnasio_1.png" target="_blank">
+                <img src="./img/Gimnasio_1.png" alt="Web Gimnasio"
+                    class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
+            </a>
+            <a href="./img/Gimnasio_2.png" target="_blank">
+                <img src="./img/Gimnasio_2.png" alt="Web Gimnasio"
+                    class="max-w-full h-auto mx-auto border-[1px] border-white">
+            </a>
+            <a class="flex justify-center items-center" href="https://proyectogimnasio-47211.web.app/" target="_blank">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-6">Ver Proyecto</button>
+            </a>
+        </div>
+        <!-- Fin Proyecto "Web Gimnasio" -->
+
+        <!-- Inicio Proyecto "Sticky Notes" -->
+        <div class="contenedor_proyecto w-1/4 border-4 border-white p-6 max-lg:w-[92%]">
+            <h1 class="text-6xl text-white font-bold text-center mb-8">Sticky Notes</h1>
+            <a href="./img/StickyNotes_1.png" target="_blank">
+                <img src="./img/StickyNotes_1.png" alt="Sticky Notes"
+                    class="max-w-full h-auto mx-auto mb-4 border-[1px] border-white">
+            </a>
+            <a href="./img/StickyNotes_2.png" target="_blank">
+                <img src="./img/StickyNotes_2.png" alt="Sticky Notes"
+                    class="max-w-full h-auto mx-auto border-[1px] border-white">
+            </a>
+            <a class="flex justify-center items-center" href="https://lorentain.github.io/stickynote.github.io/" target="_blank">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-6">Ver Proyecto</button>
+            </a>
+        </div>
+        <!-- Fin Proyecto "Sticky Notes" -->
+
+    </section>
+
 </body>
+
 </html>
